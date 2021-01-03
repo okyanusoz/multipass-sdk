@@ -1,0 +1,10 @@
+README.md
+multipass.py
+setup.cfg
+setup.py
+multipass_sdk.egg-info/PKG-INFO
+multipass_sdk.egg-info/SOURCES.txt
+multipass_sdk.egg-info/dependency_links.txt
+multipass_sdk.egg-info/not-zip-safe
+multipass_sdk.egg-info/requires.txt
+multipass_sdk.egg-info/top_level.txt
