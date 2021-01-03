@@ -49,3 +49,7 @@ print(client.list())
 vm = client.get_vm("<VM name>")
 # For even more commands, see multipass.py
 ```
+
+## Contributing
+
+To contribute, simply send a pull request. The tests will run. If they succeed, then I will be happy to merge your PR.
