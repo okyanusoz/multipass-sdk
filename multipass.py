@@ -11,7 +11,7 @@ class MultipassVM:
         cmd = [self.cmd, "info", self.vm_name, "--format", "json"]
         out = subprocess.Popen(cmd, 
            stdout=subprocess.PIPE, 
-           stderr=subprocess.STDOUT)
+           stderr=subprocess.STDOUT
         stdout,stderr = out.communicate()
         exitcode = out.wait()
         if(not exitcode == 0):
