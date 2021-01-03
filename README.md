@@ -6,7 +6,12 @@ This is a Multipass CLI wrapper for Python 3.
 
 You need Multipass to use this SDK.
 
-Coming soon to PyPI.
+Simply run:
+```
+pip install multipass-sdk
+```
+
+Or, to install from source:
 
 
 Clone this repo:
