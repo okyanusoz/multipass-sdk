@@ -38,7 +38,7 @@ client = MultipassClient()
 vm = client.launch("ubuntu-lts")
 # Get info about the VM
 print(vm.info())
-# Run something in the VM(returns the response back)
+# Run something in the VM(returns the response back in bytes)
 vm.exec("<your command here>")
 # Delete the VM
 vm.delete()
