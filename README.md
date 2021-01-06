@@ -35,7 +35,7 @@ from multipass import MultipassClient
 client = MultipassClient()
 # or client = MultipassClient("<multipass command>") if your Multipass CLI name is diffrent
 # Launch a VM(uses haikunator to generate VM names if you don't specify the name)
-vm = client.launch("ubuntu-lts")
+vm = client.launch(image="ubuntu-lts")
 # Get info about the VM
 print(vm.info())
 # Run something in the VM(returns the response back in bytes)
