@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='multipass-sdk',
-version='0.1',
+version='0.2',
 description='UNOFFICIAL Multipass Python SDK',
 url='https://github.com/okyanusoz/multipass-sdk',
 author='okyanusoz',
