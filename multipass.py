@@ -61,11 +61,14 @@ class MultipassClient:
     """
     def __init__(self, multipass_cmd="multipass"):
         self.cmd = multipass_cmd
-    def launch(self, vm_name, cpu=1, disk="5G", mem="1G", image=None):
+    def launch(self, vm_name=None, cpu=1, disk="5G", mem="1G", image=None, cloud_init=None):
         if(not vm_name):
             # similar to Multipass's VM name generator
             vm_name = Haikunator().haikunate(token_length=0)
         cmd = [self.cmd, "launch", "-c", str(cpu), "-d", disk, "-n", vm_name, "-m", mem]
+        if(cloud_init):
+            cmd.append("--cloud-init")
+            cmd.append(cloud_init)
         if(image and not image == "ubuntu-lts"):
             cmd.append(image)
         try:
